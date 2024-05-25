@@ -6,7 +6,7 @@ Este projeto visa analisar o desempenho dos jogadores da NBA ao longo de várias
 
 ## Explicação
 
-Os dados são coletados através da linguagem `R`, transformando e armazenados em um banco de dados `PostgreSQL`. Para a construção desse BD, foi utilizada a modelagem dimensional(*star-schema*) para criação das tabelas dimensão: players,teams,dates e matches, e da tabela fato: boxscore.
+Os dados são coletados através da linguagem `R`, transformando e armazenados em um banco de dados `PostgreSQL`. Para a construção desse BD, foi utilizada a modelagem dimensional(*star-schema*) para criação das tabelas **dimensão**: *players*,*teams*,*dates* e *matches*, e da tabela **fato**: *boxscore*.
 
 Esses dados são coletados e inseridos diariamente (enquanto a temporada durar).
 

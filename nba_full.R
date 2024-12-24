@@ -4,7 +4,7 @@ library(nbastatR)
 library(lubridate)
 library(DBI)
 
-setwd("C:/Users/NOTEBOOK CASA/Desktop/NBA_Analytics")
+setwd("C:/Users/user/Desktop/NBA_Analytics")
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2)
 
 
@@ -61,7 +61,7 @@ return (boxscores)
 }
 
 # Obtendo os Dados
-df <- stats(Sys.Date()-1,"Playoffs") #Sys.Date() #Regular Season, Playoffs, PlayIn
+df <- stats(Sys.Date()-1,"Regular Season") #Sys.Date() ou digitar a data "2024-01-01", tipos: #Regular Season, Playoffs, PlayIn
 df_players <- players(df)
 df_matches <- matches(df)
 #df_teams <- teams(df)

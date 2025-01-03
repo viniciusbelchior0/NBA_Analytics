@@ -24,7 +24,7 @@ Os dados são coletados através da linguagem `R`, transformados e armazenados e
 
 ### 2.2 Stack (tecnologias e ferramentas utilizadas)
 
-- Programação e códigos para coleta de dados: `R` (e biblioteca `nbastatR`[R](https://asbcllc.com/nbastatR/);
+- Programação e códigos para coleta de dados: `R` (e biblioteca `nbastatR`[R](https://asbcllc.com/nbastatR/) ).;
 - Banco de Dados: `PostgreSQL`;
 - Relatórios: `PowerBI` e `Figma` (elaboração da interface do relatório).
 

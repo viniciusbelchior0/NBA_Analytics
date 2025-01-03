@@ -3,7 +3,6 @@ library(tidyverse)
 library(nbastatR)
 library(lubridate)
 
-setwd("C:/Users/NOTEBOOK CASA/Desktop/NBA_Analytics")
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2)
 
 # Boxscore Players

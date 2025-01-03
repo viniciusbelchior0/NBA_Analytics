@@ -2,9 +2,9 @@ library(DBI)
 library(tidyverse)
 
 estabelecer_conexao_bd <- function(){
-  con <- dbConnect(RPostgres::Postgres(), dbname = "teste_dados_r",
+  con <- dbConnect(RPostgres::Postgres(), dbname = "dbname",
   				 host = "localhost", port = "5432",
-  				 user = "postgres", password = "admin")
+  				 user = "user", password = "password")
 }
 
 inserir_dados_players <- function(df,con){

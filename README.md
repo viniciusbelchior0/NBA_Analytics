@@ -24,7 +24,7 @@ Os dados são coletados através da linguagem `R`, transformados e armazenados e
 
 ### 2.2 Stack (tecnologias e ferramentas utilizadas)
 
-- Programação e códigos para coleta de dados: `R` (e biblioteca `nbastatR`![R](https://asbcllc.com/nbastatR/);
+- Programação e códigos para coleta de dados: `R` (e biblioteca `nbastatR`[R](https://asbcllc.com/nbastatR/);
 - Banco de Dados: `PostgreSQL`;
 - Relatórios: `PowerBI` e `Figma` (elaboração da interface do relatório).
 
@@ -51,6 +51,9 @@ Os dados estão disponibilizados em cinco tabelas: *dimDate*, *dimPlayers*, *dim
 
 
 ## 3. Exemplos
+
+![bd](https://github.com/viniciusbelchior0/NBA_Analytics/blob/main/references/bd_screenshot.PNG)
+*Exemplo de uma consulta no banco de dados*.
 
 ![dashboard](https://github.com/viniciusbelchior0/NBA_Analytics/blob/main/references/dashboard_screenshot.PNG)
 *Exemplo de uma página do relatório/dashboard*.

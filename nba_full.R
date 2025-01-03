@@ -4,9 +4,7 @@ library(nbastatR)
 library(lubridate)
 library(DBI)
 
-setwd("C:/Users/user/Desktop/NBA_Analytics")
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2)
-
 
 #1. Obtendo os Dados ####
 # Boxscore Players
@@ -71,9 +69,9 @@ df_boxscores <- boxscores(df)
 #2. Inserindo os dados####
 
 estabelecer_conexao_bd <- function(){
-  con <- dbConnect(RPostgres::Postgres(), dbname = "teste_dados_r",
+  con <- dbConnect(RPostgres::Postgres(), dbname = "dbname",
                              host = "localhost", port = "5432",
-                             user = "postgres", password = "admin")
+                             user = "user", password = "password")
 }
 
 inserir_dados_players <- function(df,con){

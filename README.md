@@ -53,7 +53,7 @@ Os dados estão disponibilizados em cinco tabelas: *dimDate*, *dimPlayers*, *dim
 ## 3. Exemplos
 
 ![bd](https://github.com/viniciusbelchior0/NBA_Analytics/blob/main/references/bd_screenshot.PNG)
-*Exemplo de uma consulta no banco de dados*.
+(*Exemplo de uma consulta no banco de dados*.)
 
 ![dashboard](https://github.com/viniciusbelchior0/NBA_Analytics/blob/main/references/dashboard_screenshot.PNG)
-*Exemplo de uma página do relatório/dashboard*.
+(*Exemplo de uma página do relatório/dashboard*.)

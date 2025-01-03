@@ -33,20 +33,20 @@ Os dados são coletados através da linguagem `R`, transformados e armazenados e
 O banco de dados foi criado seguindo a abordagem *Star-schema*, muito utilizada para a elaboração de *Data Warehouses*. A modelagem dimensional divide os dados em tabelas dimensão - que contêm atributos descritivos das entidades - e tabelas fato - que contêm os valores numéricos a respeito dos eventos que serão analisados. Todas as informações estão com seus nomes no idioma original, inglês, devido ao hábito da utilização deste idioma nas principais discussões a respeito da liga. 
 
 Os dados estão disponibilizados em cinco tabelas: *dimDate*, *dimPlayers*, *dimTeams*, *dimMatches* e *factBoxscores*.
-- *dimDate*: tabela dimensão contendo informações de datas;
-- *dimPlayers*: tabela dimensão contendo informações dos jogadores;
-- *dimTeams*: tabela dimensão contendo informações das equipes;
-- *dimMatches*: tabela dimensão contendo informações das partidas;
-- *factBoxscores*: tabela fato contendo as estatísticas das partidas. Cada linha representa as estatísticas individuais de cada jogador em cada partida.
+- ***dimDate***: tabela dimensão contendo informações de datas;
+- ***dimPlayers***: tabela dimensão contendo informações dos jogadores;
+- ***dimTeams***: tabela dimensão contendo informações das equipes;
+- ***dimMatches***: tabela dimensão contendo informações das partidas;
+- ***factBoxscores***: tabela fato contendo as estatísticas das partidas. Cada linha representa as estatísticas individuais de cada jogador em cada partida.
 
 ![banco de dados](https://github.com/viniciusbelchior0/NBA_Analytics/blob/main/modelagem_banco/der_nba.pgerd.png)
 
 ### 2.4 Descrição dos Arquivos e Pastas
 
-- dashboard: pasta contendo os arquivos para a elaboração do relatório (dashboard). Possui o relatório elaborado no PowerBI no arquivo `NBA_dashboard.pbix`, e a interface das páginas utilizadas no relatório nos arquivos `nba_*.png`.
-- modelagem_banco: pasta contendo os códigos para elaboração do banco de dados. O arquivo `criar_dw_nba.sql` possui o script para criação do banco no Postgres e o arquivo `der_nba.pgerd` contém o diagrama entidade relacionamento, exportado como imagem em `der_nba.pgerd.png`.
-- references: pasta contendo informações e referências ao projeto. Possui o diagrama do fluxo do projeto no arquivo `diagrama_nba_analytics.drawio`, exportado como em `diagrama_nba-analytics.png`.
-- scripts: pasta contendo os códigos para extração e ingestão dos dados em `nba-obter-dados.R` e `nba-inserir-dados.R`, respectivamente.
+- **dashboard**: pasta contendo os arquivos para a elaboração do relatório (dashboard). Possui o relatório elaborado no PowerBI no arquivo `NBA_dashboard.pbix`, e a interface das páginas utilizadas no relatório nos arquivos `nba_*.png`.
+- **modelagem_banco**: pasta contendo os códigos para elaboração do banco de dados. O arquivo `criar_dw_nba.sql` possui o script para criação do banco no Postgres e o arquivo `der_nba.pgerd` contém o diagrama entidade relacionamento, exportado como imagem em `der_nba.pgerd.png`.
+- **references**: pasta contendo informações e referências ao projeto. Possui o diagrama do fluxo do projeto no arquivo `diagrama_nba_analytics.drawio`, exportado como em `diagrama_nba-analytics.png`.
+- **scripts**: pasta contendo os códigos para extração e ingestão dos dados em `nba-obter-dados.R` e `nba-inserir-dados.R`, respectivamente.
 - *nba_full.R*: scripts contendo o código para coleta das estatísticas e inserção no banco de dados. Este arquivo é a união dos códigos disponíveis na pasta `scripts`. É o script para ser utilizado em produção.
 
 

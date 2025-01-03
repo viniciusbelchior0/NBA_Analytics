@@ -10,7 +10,7 @@ with DAG(
 
     nba_stats = BashOperator(
         task_id = 'nba_stats',
-        bash_command = 'Rscript C:/Users/NOTEBOOK CASA/Desktop/NBA_Analytics/nba_full.R'
+        bash_command = 'Rscript C:/NBA_Analytics/nba_full.R'
     )
 
     nba_stats 
